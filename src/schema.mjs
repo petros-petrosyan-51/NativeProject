@@ -1,5 +1,5 @@
 import apolloServerModule from 'apollo-server-express';
-import * as Test from './graphql/types/test.mjs';
+import * as Profile from './graphql/types/Profile.mjs';
 
 const gql = apolloServerModule.gql;
 const Root = gql`
@@ -17,9 +17,9 @@ const Root = gql`
 export default {
     typeDefs: [
         Root,
-        Test.type
+        Profile.type
     ],
     resolvers: [
-       Test.resolvers
+       Profile.resolvers
     ]
 }

@@ -13,7 +13,7 @@ app.use((req, res, next) => {
     next();
 });
 mongoose.connect(
-    "mongodb+srv://Instagram:test1234@cluster0.1ywca.mongodb.net/Instagram?retryWrites=true&w=majority",
+    "mongodb://localhost:27017/NativeProject",
     { useNewUrlParser: true, useCreateIndex: true }
 ).then(() => console.log('mongoose: connected to db'));
 graphqlServer.start((arg) => {
