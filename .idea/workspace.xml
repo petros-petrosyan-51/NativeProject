@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="515e8314-680b-4863-8c48-24dc9fac0d9c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/graphql/types/Users.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/schema.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/schema.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/models/User.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/models/User.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/types/Users.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/types/Users.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,7 @@
       <workItem from="1599648266199" duration="83000" />
       <workItem from="1599648419197" duration="262000" />
       <workItem from="1599805480264" duration="11000" />
-      <workItem from="1599805512867" duration="1037000" />
+      <workItem from="1599805512867" duration="10725000" />
     </task>
     <servers />
   </component>
