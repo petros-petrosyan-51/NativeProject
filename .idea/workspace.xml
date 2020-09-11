@@ -20,13 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="515e8314-680b-4863-8c48-24dc9fac0d9c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/graphql/models/User.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphql/types/Profile.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/types/test.mjs" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graphql/types/Users.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/schema.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/schema.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -82,6 +78,10 @@
       <workItem from="1599484323175" duration="291000" />
       <workItem from="1599485063536" duration="3546000" />
       <workItem from="1599631622255" duration="7184000" />
+      <workItem from="1599648266199" duration="83000" />
+      <workItem from="1599648419197" duration="262000" />
+      <workItem from="1599805480264" duration="11000" />
+      <workItem from="1599805512867" duration="1037000" />
     </task>
     <servers />
   </component>

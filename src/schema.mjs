@@ -1,6 +1,6 @@
 import apolloServerModule from 'apollo-server-express';
 import * as Profile from './graphql/types/Profile.mjs';
-
+import * as Users from './graphql/types/Users.mjs';
 const gql = apolloServerModule.gql;
 const Root = gql`
     type Query {
@@ -17,9 +17,11 @@ const Root = gql`
 export default {
     typeDefs: [
         Root,
-        Profile.type
+        Profile.type,
+        Users.type,
     ],
     resolvers: [
-       Profile.resolvers
+       Profile.resolvers,
+        Users.resolvers,
     ]
 }
