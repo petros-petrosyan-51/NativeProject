@@ -21,13 +21,16 @@
   <component name="ChangeListManager">
     <list default="true" id="515e8314-680b-4863-8c48-24dc9fac0d9c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/models/User.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/models/User.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/graphql/types/Users.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/types/Users.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -81,7 +84,23 @@
       <workItem from="1599648266199" duration="83000" />
       <workItem from="1599648419197" duration="262000" />
       <workItem from="1599805480264" duration="11000" />
-      <workItem from="1599805512867" duration="10725000" />
+      <workItem from="1599805512867" duration="12008000" />
+      <workItem from="1599908351208" duration="792000" />
+      <workItem from="1599918021856" duration="1791000" />
+      <workItem from="1599919828003" duration="1596000" />
+      <workItem from="1599921636317" duration="185000" />
+      <workItem from="1600068183964" duration="1273000" />
+      <workItem from="1600069990910" duration="1286000" />
+      <workItem from="1600072286252" duration="1234000" />
+      <workItem from="1600074216403" duration="1346000" />
+      <workItem from="1600077198415" duration="992000" />
+      <workItem from="1600079017055" duration="1590000" />
+      <workItem from="1600086502284" duration="529000" />
+      <workItem from="1600088105812" duration="132000" />
+      <workItem from="1600089516466" duration="1794000" />
+      <workItem from="1600091802749" duration="1794000" />
+      <workItem from="1600093611867" duration="384000" />
+      <workItem from="1600163178834" duration="1715000" />
     </task>
     <servers />
   </component>
