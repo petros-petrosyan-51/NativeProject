@@ -35,7 +35,7 @@ export const type = gql`
     }
     input SignInInput{
      email: String!,
-     password: String!
+     password: String!,
     }
     input TryAgainInput{
      id: String!
@@ -44,6 +44,10 @@ export const type = gql`
     input VerificationInput{
      id: String!
      code: String!
+    }
+    input TokenInput{
+    id: String
+    token: String
     }
     type SignInResult{
     id: String
@@ -59,6 +63,7 @@ export const type = gql`
     }
     extend type Mutation {
        SignUp(input: SignUpInput): String!
+       updateToken(input: TokenInput): String!
     }`;
 
 export const resolvers = {
@@ -100,6 +105,10 @@ export const resolvers = {
         }
     },
     Mutation: {
+        updateToken: async (_,{input})=>{
+           const UpdateToken = await user.updateOne({_id: input.id},{token: input.token})
+            return "ok"
+},
         SignUp: async (_,{input}) =>{
             const result = await user.findOne({ email: input.email });
             const code = Math.random().toString().slice(-6);
@@ -114,6 +123,7 @@ export const resolvers = {
                     '</body>\n');
                  if (mail){
                      input.valid = code;
+                     input.token=''
                      input.password= md5(input.password);
                      const create = await user.create(input)
                      return create?'id:'+create.id:'Invalid data'

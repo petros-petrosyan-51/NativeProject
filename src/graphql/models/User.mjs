@@ -6,6 +6,7 @@ const alertSchema = new mongoose.Schema({
     password: String,
     valid: String,
     friends: [String],
-    favorites: [String]
+    favorites: [String],
+    token: String
 });
 export default mongoose.model('user', alertSchema)

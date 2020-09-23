@@ -21,8 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="515e8314-680b-4863-8c48-24dc9fac0d9c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/types/Users.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/types/Users.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/models/User.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/models/User.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/types/Profile.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/types/Profile.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +52,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="/var/www/html/PDFUPLOAD" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -101,6 +101,8 @@
       <workItem from="1600091802749" duration="1794000" />
       <workItem from="1600093611867" duration="384000" />
       <workItem from="1600163178834" duration="1715000" />
+      <workItem from="1600334454158" duration="24000" />
+      <workItem from="1600867648141" duration="1647000" />
     </task>
     <servers />
   </component>
@@ -128,9 +130,9 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="814" y="316" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1599221950708" />
-    <state x="776" y="297" width="424" height="484" key="FileChooserDialogImpl" timestamp="1598701815166">
+    <state x="776" y="297" width="424" height="484" key="FileChooserDialogImpl" timestamp="1600334476031">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="776" y="297" width="424" height="484" key="FileChooserDialogImpl/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1598701815166" />
+    <state x="776" y="297" width="424" height="484" key="FileChooserDialogImpl/1920.0.1920.1080/67.27.1853.1053@67.27.1853.1053" timestamp="1600334476031" />
   </component>
 </project>
