@@ -21,8 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="515e8314-680b-4863-8c48-24dc9fac0d9c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/models/User.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/models/User.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/types/Profile.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/types/Profile.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/types/Users.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/types/Users.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +104,10 @@
       <workItem from="1600163178834" duration="1715000" />
       <workItem from="1600334454158" duration="24000" />
       <workItem from="1600867648141" duration="1647000" />
+      <workItem from="1600951669095" duration="1172000" />
+      <workItem from="1601020785626" duration="957000" />
+      <workItem from="1601280409697" duration="32000" />
+      <workItem from="1601298386202" duration="636000" />
     </task>
     <servers />
   </component>

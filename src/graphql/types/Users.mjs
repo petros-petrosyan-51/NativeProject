@@ -1,6 +1,7 @@
 import apolloServerModule from 'apollo-server-express'
 import user from '../models/User.mjs'
 import graphqlSub from 'graphql-subscriptions';
+import fetch from "node-fetch";
 const gql = apolloServerModule.gql
 const pubsub = new graphqlSub.PubSub();
 
@@ -12,7 +13,6 @@ export const type = gql`
        favorites: [String]
        valid: String!,
        favorite: Boolean
-       action: String
     }
     input friendsInput{
       id: String!
@@ -24,6 +24,7 @@ export const type = gql`
        favoritesGet(id: String):userData
        getFavorite(array: [String]):[userData]!
        searchFriends(id: String,str: String):[userData]
+       sendNotification(id: String):String
     }
     extend type Mutation{
        addFriends(input: friendsInput): String
@@ -95,6 +96,29 @@ export const resolvers = {
             const result = await user.find({$and:[{'_id':{ $in: friends}},{$or: [{username:  {$regex: new RegExp( str, "i")}},{email:  {$regex: new RegExp( str, "i")}}]}]})
             result.length=10;
             return result;
+        },
+        sendNotification: async (_,{id})=>{
+            const getToken = await user.findOne({_id: id},'token')
+            const {token} = getToken;
+            if (token){
+                const message = {
+                    to: token,
+                    sound: 'default',
+                    title: 'Notifications ChatApp',
+                    body: 'You were sued for friendship',
+                    data: { data: 'goes here' },
+                };
+                const req =  await fetch('https://exp.host/--/api/v2/push/send', {
+                    method: 'POST',
+                    headers: {
+                        Accept: 'application/json',
+                        'Accept-encoding': 'gzip, deflate',
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(message),
+                });
+            }
+            return '1'
         }
     },
     Mutation:{
@@ -106,15 +130,7 @@ export const resolvers = {
             const {ok} = await user.updateOne({_id: input.friendId}, {favorites: favorites});
             if (ok) {
                 const result = await user.findOne({_id: input.friendId})
-                await pubsub.publish('favoritesSub', {favoritesSub: {
-                        friends: result.friends,
-                        favorites: result.favorites,
-                        id: result.id,
-                        username: result.username,
-                        email: result.email,
-                        password: result.password,
-                        action: "add"
-                    }});
+                await pubsub.publish('favoritesSub', {favoritesSub: result});
             }
             return ok.toString();
 
@@ -125,15 +141,7 @@ export const resolvers = {
             const {ok} = await user.updateOne({_id: input.friendId}, {favorites: favorites});
             if (ok) {
                 const result = await user.findOne({_id: input.friendId})
-                await pubsub.publish('favoritesSub', {favoritesSub: {
-                     friends: result.friends,
-                     favorites: result.favorites,
-                     id: result.id,
-                     username: result.username,
-                     email: result.email,
-                     password: result.password,
-                     action: "delete"
-                    }});
+                await pubsub.publish('favoritesSub', {favoritesSub: result});
             }
             return ok.toString();
         },
