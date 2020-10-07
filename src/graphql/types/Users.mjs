@@ -12,7 +12,8 @@ export const type = gql`
        email: String!
        favorites: [String]
        valid: String!,
-       favorite: Boolean
+       favorite: Boolean,
+      action: String
     }
     input friendsInput{
       id: String!
